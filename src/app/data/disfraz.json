@@ -1,0 +1,11 @@
+{
+    "data":[
+        {
+            "_id":1,
+            "category": "princess",
+            "size": 7,
+            "url": "http://localhost/image1.jpg"
+        }
+
+    ]
+}
