@@ -1,1 +1,13 @@
-<p>home-page works!</p>
+
+<p>HOLA, MODULO HOME</p>
+<link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+<div class="calendar">
+    <div class="row">
+        <div class="pr-3 pb-3 pe-3 w-auto">
+          <bs-datepicker-inline [bsValue]="bsInlineValue"></bs-datepicker-inline>
+        </div>
+        <div class="pr-3 pb-3 pe-3 w-auto">
+          <bs-daterangepicker-inline [bsValue]="bsInlineRangeValue"></bs-daterangepicker-inline>
+        </div>
+      </div>
+</div>

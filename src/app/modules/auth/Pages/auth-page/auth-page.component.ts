@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators,FormBuilder} from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-auth-page',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthPageComponent implements OnInit {
 
+  formLogin: FormGroup = new FormGroup({})
   constructor() { }
 
   ngOnInit(): void {
+    this.formLogin = new FormGroup(
+      {
+        email: new FormControl('',[
+        Validators.required,
+        Validators.email
+        ]),
+        password: new FormControl('')
+    })
   }
 
 }

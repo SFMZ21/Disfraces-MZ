@@ -1,20 +1,20 @@
 <div class="login-auth-page"> 
     <div class="login">
         <div class="header-wrapper">
-            <h1>Bienvenido</h1>
+            <h1>Bienvenido a Disfraces MZ</h1>
         </div>
         <div class="login-wrapper">
             <form class="login-form">
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
                 </div>
-                <div>
+                <div class="form-group">
                     <input formControlName="email" type="text" placeholder="Ingresa tu correo electrónico" class="form-input">
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
                 </div>
-                    <div> 
+                    <div class="form-group"> 
                         <input formControlName="password" type="password" placeholder="Ingresa tu contraseña" class="form-input">
                     </div>
                     <div class="form-action">
@@ -22,31 +22,25 @@
                     </div>
                     <div *ngIf="errorSession"> Ocurrió un error con tu Email o Password </div>
                 <div class="account-form">
-                    <h3>No tienes una cuenta, crea una </h3>
+                    <h3>¿No tienes una cuenta?, crea una </h3>
                 </div>
             </form>   
+            
+            <!-- <form (ngSubmit)="onSubmit()">
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" [(ngModel)]="email" #ctrl="ngModel" required>
+                </div>
+                <button type="submit">Login</button>
+              </form> -->
         </div>
     </div>
 
     
-
-        <form class="form-logo">
+   
         <div class="logo">
-            <div class="logo header-center">
-                <ng-container *ngTemplateOutlet="Logo"></ng-container>
-            </div>
-        <ng-template #Logo>
-            <div class="logo-inside" *ngIf="true">
-                <img src="C:\Users\Sulma\Documents\UNIVERSIDAD_2023\PROYECTO_DE_GRADUACIÓN\Logo.png" alt="" class="cover">
-            </div>
-        </ng-template>
-        </div>   
-        <div >
-            <a href="/auth/login-admin">
-                <input type="button" class="btn-login-admin" ><i class="uil uil-user-exclamation"></i>
-            </a>
-            
+            <img src="assets/images/Logo.png" alt="" class="cover">
         </div>
-    </form>
+    
     
 </div>
